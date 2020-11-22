@@ -1,0 +1,80 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "anagram maker",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "alexa never mind",
+                        "never mind",
+                        "Alexa cancel",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "Alexa help",
+                        "I need help",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "no thank you",
+                        "alexa all set",
+                        "all set",
+                        "nah",
+                        "nope",
+                        "Alexa no",
+                        "no",
+                        "stop",
+                        "Alexa stop",
+                        "Alexa end",
+                        "end"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "makeanagram",
+                    "slots": [
+                        {
+                            "name": "word",
+                            "type": "AMAZON.Language"
+                        }
+                    ],
+                    "samples": [
+                        "i want to hear an anagram for {word} ",
+                        "i want to hear an anagram of {word}",
+                        "give me an anagram for {word}",
+                        "give me an anagram of {word}",
+                        "what is an anagram for {word}",
+                        "Alexa what is an anagram of {word}",
+                        "what is an anagram of {word}",
+                        "{word}",
+                        "make anagram of {word}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
